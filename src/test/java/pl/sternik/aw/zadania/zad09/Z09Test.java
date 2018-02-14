@@ -12,8 +12,7 @@ public class Z09Test {
         int[][] tab1 = tab.clone();
         int w1 = 1;
         int w2 = 2;
-        Z09 z09 = new Z09();
-        z09.zamien(w1,w2,tab);
+        Z09.zamien(w1,w2,tab);
         assertThat(tab[w1]).isEqualTo(tab1[w2]);
     }
 }

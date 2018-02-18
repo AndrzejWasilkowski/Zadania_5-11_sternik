@@ -11,7 +11,7 @@ public class Z10Test {
         int[][] liczby = {{10,20,30,40},{5,4,3,2}};
         String[] znaki = {"+","-","*","/"};
 
-        int[] oczekiwany = {15,16,90,20};
+        int[] oczekiwany = {15,15,90,20};
 
         Z10 z10 = new Z10();
 

@@ -17,7 +17,6 @@ public class Z10Test {
         int[] wynik = z10.oblicz(liczby,znaki);
         assertThat(wynik).isEqualTo(oczekiwany);
     }
-
     @Test(expected = ArithmeticException.class)
     public void obliczDzieleniePrzezZero() {
         int[][] liczby = {{10,20,30,40},{5,4,3,0}};

@@ -28,7 +28,6 @@ public class Z10 {
             } else {
                 wybor = 4;
             }
-
             switch (wybor){
                 case 1:
                     wynik[i] = liczby[0][i] * liczby[1][i];

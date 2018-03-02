@@ -3,7 +3,6 @@ package pl.sternik.aw.zadania.zad24;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.Test;
-import pl.sternik.aw.zadania.zad07.DivideByZeroException;
 
 public class Z24Test {
     private Z24 z24 = new Z24();

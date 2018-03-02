@@ -65,4 +65,22 @@ public class Z07Test {
 
         assertThat(wejscie).isEqualTo(wyjscie);
     }
+
+    @Test(expected = DivideByZeroException.class)
+    public void dzieleniePrzezZeroPierwszySposob(){
+        int[] tablica = {10,23,4,6,5,7,2,9};
+        int x = 0;
+        Z07 Z07 = new Z07();
+
+        System.out.println(Z07.ZnajdzLiczbe(tablica,x,"1"));
+    }
+
+    @Test(expected = DivideByZeroException.class)
+    public void dzieleniePrzezZeroDrogiSposob(){
+        int[] tablica = {10,23,4,6,5,7,2,9};
+        int x = 0;
+        Z07 Z07 = new Z07();
+
+        System.out.println(Z07.ZnajdzLiczbe(tablica,x,"1"));
+    }
 }

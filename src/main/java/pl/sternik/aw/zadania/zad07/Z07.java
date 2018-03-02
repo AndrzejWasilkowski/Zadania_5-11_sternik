@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Z07 {
     public static void main(String[] args){
-        int[] tablica = {10,23,4,6,5,7,2,9};
+        int[] tablica = {10,23,4,6,5,7,0,9};
 
         Scanner in = new Scanner(System.in);
         System.out.println("Podaj szukaną liczbę");
@@ -40,8 +40,11 @@ public class Z07 {
     }
 
     public int ZnajdzPodzielna(int[] tablica, int dzielnik){
+        if (dzielnik == 0){
+            throw new DivideByZeroException("Dzielenie przez 0!!!");
+        }
         for (int i=0;i<tablica.length;i++){
-            if (tablica[i]%dzielnik==0) {
+            if (tablica[i] % dzielnik == 0) {
                 return i;
             }
         }
@@ -49,10 +52,14 @@ public class Z07 {
     }
 
     public int ZnajdzPodzielnaWhile(int[] tablica, int dzielnik){
+        if (dzielnik == 0){
+            throw new DivideByZeroException("Dzielenie przez 0!!!");
+        }
         int i = 0;
-        while(i < tablica.length && tablica[i]%dzielnik!=0){
+        while (i < tablica.length && tablica[i] % dzielnik != 0) {
             i++;
         }
+
         if (i<tablica.length){
             return i;
         } else{

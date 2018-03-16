@@ -20,6 +20,7 @@ public class Z32 {
         //Sortwanie tablicy rosnąco i wypisywanie For-Each
         z32.sortujTablice(tabKopia, 'R');
         System.out.println(z32.wypiszTabliceForEach(tabKopia));
+        
     }
 
     public String[] kopiowanieTablicy(String[] tablica){
